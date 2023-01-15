@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="from">
+      <h1>Barcode Generator</h1>
+      <div class="result1">
+        <span>Enter Your Text</span>
+      </div>
+      <input type="text" class="link BrCode" placeholder="Enter Your Text..."  />
+      <select class="format" required onchange="GetBarcode()">
+         <option disabled selected="">Select Barcode Type</option>
+         <option value="auto">Auto</option>
+         <option value="e">UPC_E</option>
+         <option value="a">UPC_A</option>
+         <option value="8">EAN8</option>
+         <option value="13">EAN13</option>
+         <option value="codabar">CODABAR</option>
+         <option value="39">Code39</option>
+         <option value="128">Code128</option>
+         <option value="aztec">Aztec</option>
+         <option value="qr">QRCode</option>
+         <option value="dm">DataMatrix</option>
+         <option value="417">PDF417</option>
+         <option value="usps">USPSMail</option>
+         <option value="royal">RoyalMail</option>
+      </select>
+    <div class="hidden">
+        <input type="text" name="type" class="link Idurl" hidden>
+        <div class="result2"></div>
+    </div>
+ </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
